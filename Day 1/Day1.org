@@ -1,0 +1,51 @@
+#+TITLE: Day 1
+#+AUTHOR: NeoDrags
+
+#+BEGIN_SRC python :tangle day1_part1.py :exports both :results output
+f = open("test.txt", "r")
+lines = f.readlines()
+f.close()
+current = 0
+currentLine = 0
+count = 0
+
+for line in lines:
+    if currentLine == 0:
+       current = int(line)
+    if int(line) > current:
+        count+= 1
+        current = int(line)
+    if int(line) <= current:
+        current = int(line)
+    currentLine+=1
+
+print(count)
+#+END_SRC
+
+#+RESULTS:
+: 1475
+
+#+BEGIN_SRC python :tangle day1_part2.py :exports both :results output
+  f = open("test.txt", "r")
+  lines = list(map(int, f.readlines()))
+  f.close()
+  current = 0
+  count = 0
+  Sum = 0
+
+  for i in range(0, len(lines) - 2):
+      tempSum = sum(lines[i:i+3])
+      if current == 0:
+          Sum = tempSum
+      if Sum < tempSum:
+          count+=1
+          Sum = tempSum
+      if Sum >= tempSum:
+          Sum = tempSum
+      current+=1
+
+  print(count)
+#+END_SRC
+
+#+RESULTS:
+: 1516
