@@ -1,2 +1,7 @@
-# AdventOfCode2021
-Advent Of Code 2021 in python
+#+TITLE: Advent Of Code 2021
+#+AUTHOR: NeoDrags
+
+* About
+  This is my advent of code 2021 repository where I have written all the solutions.
+** Where to find the working
+   There are folders for each day and the org file shows the code as well as the solutions.

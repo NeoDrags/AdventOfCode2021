@@ -2,7 +2,7 @@
 #+AUTHOR: NeoDrags
 
 * Question
-  To find the depth and the number of times the value has increased (Level Easy)
+  To find the depth and the number of times the value has increased.
 
 * Code
 #+BEGIN_SRC python :tangle day1_part1.py :exports both :results output
