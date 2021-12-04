@@ -1,6 +1,10 @@
 #+TITLE: Day 1
 #+AUTHOR: NeoDrags
 
+* Question
+  To find the depth and the number of times the value has increased (Level Easy)
+
+* Code
 #+BEGIN_SRC python :tangle day1_part1.py :exports both :results output
 f = open("test.txt", "r")
 lines = f.readlines()
@@ -22,9 +26,15 @@ for line in lines:
 print(count)
 #+END_SRC
 
+* Output
 #+RESULTS:
 : 1475
 
+* Question
+  Same input file and same question but this time we have to find the sum of the 3 terms including the first one.
+
+
+* Code
 #+BEGIN_SRC python :tangle day1_part2.py :exports both :results output
   f = open("test.txt", "r")
   lines = list(map(int, f.readlines()))
@@ -47,5 +57,6 @@ print(count)
   print(count)
 #+END_SRC
 
+* Output
 #+RESULTS:
 : 1516
