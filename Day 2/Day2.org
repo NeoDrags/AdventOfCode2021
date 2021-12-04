@@ -35,7 +35,7 @@ either increases or decreases the depth and now because of this down increases t
 forward does nothing if aim is not zero multiply the aim with the forward direction
 
 * Code
-#+BEGIN_SRC python :tangle day2_part2.org :exports both :results output
+#+BEGIN_SRC python :tangle day2_part2.py :exports both :results output
   f = open("test.txt", "r")
   lines = f.readlines()
   f.close()
