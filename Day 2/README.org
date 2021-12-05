@@ -25,7 +25,7 @@
     print(horizontalPos * verticalPos)
   #+END_SRC
 
-* Result
+* Output
   #+RESULTS:
   : 2187380
 
