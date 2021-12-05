@@ -33,7 +33,8 @@
     epsilonValue = int(epsilon, 2)
     print(gammaValue * epsilonValue)
   #+END_SRC
-
+  
+* Output
  #+RESULTS:
  : 1025636
 
